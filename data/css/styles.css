@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Proxima-Nova-ExtraBold;
+  src: url("../fontes/Proxima Nova Black.otf");}
+@font-face {
+  font-family: Proxima-Nova-Bold;
+  src: url("../fontes/Proxima Nova Extrabold.otf");}
+@font-face {
+  font-family: Proxima-Nova-Regular;
+  src: url("../fontes/Proxima Nova Bold.otf");}
+*{
+  font-family: Proxima-Nova-Regular;
+  outline: none;
+  color: white
+}
+body{
+  background-color: rgb(23, 26, 30);
+}
+table{
+  background-color: black;
+  position: fixed;
+  top:0;left: 0;right: 0;
+  margin:0;padding: 0;
+  box-shadow: 0 0 15px black;
+  width: 100%;
+}
+td{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Proxima-Nova-ExtraBold;
+  color: rgb(255,204,0);
+  vertical-align: middle;
+  text-align: left;
+}
+input{
+  border: none;
+  font-size: 20px;
+  padding: 7px 15px;
+  border-radius: 100px;
+  color: black;
+  height: 30px;
+}
+button{
+  margin-top: 15px;
+  border: none;
+  background: none;
+  padding: 7px;
+  font-size: 18px;
+  border-radius: 100px;
+  height: 50px;
+  font-family: Proxima-Nova-Bold;
+}
+img{
+  vertical-align: middle;
+  margin-right: 15px
+}
+#download{
+  background-color: rgb(255,204,0);
+  color: black;
+  width: 68%
+}
+#limpar{
+  width: 30%;
+  float: right;
+  background-color: none;
+  border: 2px solid white
+}
+#baixar_agora{
+  display: none;
+  background-color: rgb(255,204,0);
+  color: black;
+  width: 50%;
+}
+#fundo{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;top: 0;
+  width: 100%;height:100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0,0.7);
+  animation-name: aparecer;
+  animation-duration: 0.3s;
+}
+@keyframes aparecer {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+#sobre{
+  position: absolute;
+  padding: 20px;
+  background-color: rgb(23, 26, 30);
+  border-radius: 30px;
+  width: 15.3em;
+  height: 13em;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%);
+}
+#circulo{
+  background-color: white;
+  color: black;
+  width: 18%;
+  height: 20%;
+  border-radius: 50%;
+  margin-top: 5%; margin-left: 40%
+}
+#perfil{
+  border-radius: 50%;
+  border: 2px solid white;
+  vertical-align: middle;
+}
+.material-icons.botao1{
+  margin: 0;
+  color:rgb(255,204,0);
+  border: none;
+  height: 0;
+  font-size: 30px;
+}
+.clickme:hover{
+  color: rgb(255,204,0)
+}
