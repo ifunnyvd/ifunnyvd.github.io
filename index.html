@@ -18,10 +18,10 @@
 
     <div style="padding:10px">
       <h3 style="font-family: Proxima-Nova-Bold;font-size: 20px">Insira o link do vídeo abaixo:</h3>
-      <input type="text" id="link" value="" placeholder="Link...">
+      <input type="text" id="link" value="" placeholder="Link..." autofocus>
       <button type="button" id="download" onclick="download()">PROCURAR</button>
       <button type="button" id="limpar" onclick="document.getElementById('link').value=''">LIMPAR</button>
-      <script type="text/javascript">document.getElementById("link").focus()</script>
+      <script type="text/javascript">document.getElementById("link").click();</script>
     </div>
 
     <div style="padding:10px">

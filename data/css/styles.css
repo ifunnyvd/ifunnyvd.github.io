@@ -58,10 +58,10 @@ img{
 #download{
   background-color: rgb(255,204,0);
   color: black;
-  width: 68%
+  width: 63%
 }
 #limpar{
-  width: 30%;
+  width: 35%;
   float: right;
   background-color: none;
   border: 2px solid white
@@ -70,7 +70,7 @@ img{
   display: none;
   background-color: rgb(255,204,0);
   color: black;
-  width: 50%;
+  width: 63%;
   font-size: 20px;
 }
 #fundo{
