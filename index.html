@@ -13,7 +13,7 @@
     <table>
       <td style="width: 32px; padding-left: 15px;"><img src="data/imagens/ifunny_icon.png" width="32px"></td>
       <td>iFunny Vídeo Downloader</td>
-      <td style="text-align:right;"><button class="material-icons botao1" onclick="document.getElementById('fundo').style = 'display:block'">info</button></td>
+      <td style="text-align:right; padding-right: 10px;"><button class="material-icons botao1" onclick="document.getElementById('fundo').style = 'display:block'">info</button></td>
     </table><br><br><br>
 
     <div style="padding:10px">
@@ -21,6 +21,7 @@
       <input type="text" id="link" value="" placeholder="Link...">
       <button type="button" id="download" onclick="download()">PROCURAR</button>
       <button type="button" id="limpar" onclick="document.getElementById('link').value=''">LIMPAR</button>
+      <script type="text/javascript">document.getElementById("link").focus()</script>
     </div>
 
     <div style="padding:10px">
@@ -30,10 +31,11 @@
 
     <div id="fundo">
       <div id="sobre">
-        <p style="display: block;font-size: 20px">Desenvolvido por:</p>
-        <h2><a href="https://br.ifunny.co/user/ReiDoFuscaBR" class="clickme"><img src="data/imagens/perfil.jpg" width="48px" id="perfil">ReiDoFuscaBR</a></h2>
+        <p style="display: block; font-size: 20px">Desenvolvido por:</p>
+        <h2><a href="https://br.ifunny.co/user/ReiDoFuscaBR" class="clickme" target="_blank"><img src="data/imagens/perfil.jpg" width="48px" id="perfil">ReiDoFuscaBR</a></h2>
         <p style="display: block; font-size: 16px">
-        	Para feedback e afins, contate-<br>-nos por e-mail clicando <a href="" class="clickme">aqui</a>.
+        	Para feedback e afins, contate-<br>-nos por e-mail clicando 
+        	<a href="mailto:reidofuscabr@tuta.io?subject=iFunny%20Video%20Downloader" class="clickme">aqui</a>.
         </p>
         <button id="circulo" onclick="document.getElementById('fundo').style = 'display:none'">X</button>
       </div>

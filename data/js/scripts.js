@@ -1,3 +1,5 @@
+var val_link = /https:\/\/(br\x2e)?ifunny.co\/(gif|fun|picture|video)\/(.+?)/;
+
 resize=function(){
   document.getElementById("link").style = "width: "+(window.innerWidth-65)+"px;"
 }
@@ -14,17 +16,10 @@ function conv_tam(x){
 }
 function download(){
 	url = document.getElementById('link').value;
-	try{
-		uck = new URL(url);
-	}catch{
-		alert("Por favor insira um link do iFunny válido!");
-		return
-	}
-	if (!/ifunny.co/.test(uck.hostname)){
-		alert("Por favor insira um link do iFunny válido!");
+	if (!val_link.test(url)){
+		alert("Por favor, insira um link válido de um vídeo/imagem/GIF do iFunny!");
 		return;
 	}
-
 	proc = document.getElementById("proc");
 	btns = document.getElementById("baixar_agora");
 
@@ -42,7 +37,7 @@ function download(){
 			fname = k[k.length-1];
 			fname = fname.replace(/.mp4|.jpg|.gif/, "")
 
-			proc.innerHTML = "Arquivo encontrado! (tamanho: "+conv_tam(tam)+")";
+			proc.innerHTML = "Arquivo encontrado! (Tamanho: "+conv_tam(tam)+")";
 			btns.style.display = "block";
 			btns.onclick = function (){window.open(link, "_blank")};
 		}
